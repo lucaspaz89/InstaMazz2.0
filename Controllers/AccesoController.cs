@@ -53,7 +53,8 @@ namespace InstaMazz2._0.Controllers
 
             if (oUsuario.IdUsuario != 0)
             {
-                Session["usuario"] = oUsuario;
+                var usu = oUsuario.email;
+                Session["usuario"] = usu;
                 return RedirectToAction("Index", "Home");
             }
             else
