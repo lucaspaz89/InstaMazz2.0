@@ -1,0 +1,39 @@
+﻿
+@{
+    ViewBag.Title = "ListarVista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+@{
+    ViewBag.Title = "ListarVista";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+<div>
+
+    <table class="table table-bordered">
+        <thead>
+            <tr>
+                <th>UrlImg</th>
+                <th>descripcion</th>
+
+                <th></th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var item in Model)
+            {
+                <tr>
+                    <td>@item.UrlImg</td>
+                    <td>@item.Descripcion</td>
+                    <td>
+                        <a href="@Url.Action("EliminarPost","Post")" class="btn btn-danger btn-sm" asp-route-Id="@item.IdPost"><i class="bi bi-person-x"></i> Eliminar</a>
+                    </td>
+                </tr>
+
+            }
+        </tbody>
+
+    </table>
+</div>
+
