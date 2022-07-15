@@ -47,14 +47,15 @@ namespace InstaMazz2._0.Controllers
 
 
                 oUsuario.IdUsuario = Convert.ToInt32(cmd.ExecuteScalar().ToString());
-                var result = oUsuario.IdUsuario;
+                //var result = oUsuario.IdUsuario;
             }
 
 
             if (oUsuario.IdUsuario != 0)
             {
-                var usu = oUsuario.email;
-                Session["usuario"] = usu;
+                //var usu = oUsuario.email;
+                //Session["usuario"] = usu;
+                Session["usuario"] = oUsuario;
                 return RedirectToAction("Index", "Home");
             }
             else
