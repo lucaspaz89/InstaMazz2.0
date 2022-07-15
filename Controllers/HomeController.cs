@@ -17,6 +17,7 @@ namespace InstaMazz2._0.Controllers
             //usu.email = "lucaspaz89.89@gmail.com";
             //var result = Session["usuario"];
             ViewBag.eamil = "lucaspaz89.89@gmail.com";
+
             return View();
         }
 
