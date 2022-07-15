@@ -12,6 +12,7 @@ namespace InstaMazz2._0.Controllers
     {
         public ActionResult Index()
         {
+
             return View();
         }
 
